@@ -274,7 +274,7 @@ input{
 #email-label{
     display: block;
 }
-#email{
+#email, #name-label{
     width:86%;
 }
 textarea {
