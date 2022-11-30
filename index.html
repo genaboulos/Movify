@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title>Anne with an E</title>
+        <link href="styles.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="movies, series, online movies, cinema, online movies, watch online ">
+    </head>
+
+    <body>
+        <!-- ====== Header ====== -->
+            <div class="navbar" id="navbar">
+                <!-- ====== NavBar ====== -->
+                    <div class="logo-and-menu">
+                        <!-- ====== Logo ====== -->                            
+                                <a href="#" class="logo-link">
+                                    <img class="logo-image" 
+                                     src="logo.svg" width="60%">
+                                </a>
+                                <!--<div class="responsive-mobile-section">
+                                    ::before
+                                    <span></span>
+                                    ::after
+                                </div>-->
+                        <!-- ====== Main menu====== -->
+                        <div class="main-menu">
+                                    <a href="index.html" class="bar-item">Home</a>
+                                    <a href="#story" class="bar-item">Story</a>
+                                    <a href="#about-us" class="bar-item">About Us</a>
+                                    <a href="#cast-and-crew" class="bar-item">Cast & Crew</a>
+                                    <a href="#signup" class="bar-item">Sign Up</a>
+                                   
+                        </div>
+                    </div>
+            </div>
+            <script>
+                window.onscroll = function() {myFunction()};
+                
+                var navbar = document.getElementById("navbar");
+                var sticky = navbar.offsetTop;
+                
+                function myFunction() {
+                  if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky")
+                  } else {
+                    navbar.classList.remove("sticky");
+                  }
+                }
+                </script>
+        <!-- ====== page content ====== -->
+            <!-- ====== Automatic slideshow ====== -->
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="bg1.jpg" class="image" style="width:100%;">
+                    <div class="text">
+                        <h1>Anne With an E</h1>
+                        <p><b>The adventures of a young orphan girl<br> living in the early 19th century.</b></p>   
+                    </div>
+                </div>
+                <div class="mySlides fade">
+                    <img src="bg3.jpg" class="image" style="width:100%;">
+                    <div class="bg2-text">
+                        <h1>Anne With an E</h1>
+                        <p><b>In the late 19th century,<br> the life of Anne, a young and bright orphan,<br> undergoes a dramatic shift when <br>she is adopted by a brother-sister duo.</b></p>                      
+                    </div>
+                </div>
+                <div class="mySlides fade">
+                    <img src="bg4.jpg" class="image" style="width:100%;">
+                    <div class="text">
+                        <h1>Anne With an E</h1>
+                        <p><b>The adventures of a young orphan girl<br> living in the early 19th century.</b></p>   
+                    </div>
+                </div>
+                <div class="mySlides fade">
+                    <img src="bg5.jpg" class="image" style="width:100%;">
+                    <div class="text">
+                        <h1>Anne With an E</h1>
+                        <p><b>The adventures of a young orphan girl<br> living in the early 19th century.</b></p>   
+                    </div>
+                </div>
+            </div>
+            <div style="text-align:center">
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+            </div>
+              
+            <script>
+                let slideIndex = 0;
+                showSlides();
+                
+                function showSlides() {
+                  let i;
+                  let slides = document.getElementsByClassName("mySlides");
+                  let dots = document.getElementsByClassName("dot");
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  slideIndex++;
+                  if (slideIndex > slides.length) {slideIndex = 1}    
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                  setTimeout(showSlides, 5000); // Change image every 2 seconds
+                }
+            </script>
+
+         <!-- ====== story ====== -->
+         <div class="story-section">
+            <div id="story">
+                    <div class="story-box">
+                            <h2>THE STORY</h2>
+                    </div>
+                    
+            </div>
+            <div class="story-text">
+                <h4><span class="realeased-date">REALEASE DATE</span> DECEMBER 25, 2021</h4>
+                <p>In 1896, elderly brother and sister Matthew and Marilla Cuthbert (who live together as they never married) decide to adopt an orphan boy to help out around their ancestral farm of Green Gables, on the outskirts of the Canadian town of Avonlea, Prince Edward Island.<br>
+                    When Matthew goes to pick the child up at the railway station, he finds 13-year-old Anne Shirley, an imaginative, bright, high-spirited, and talkative girl, instead.<br>
+                    Anne was orphaned when her parents died when she was a few months old, and lived as a servant in various households before being placed in an orphanage.<br>
+                    While Matthew decides he would like her to stay, Marilla does not trust Anne, given her status as an unknown orphan and the perceived uselessness of a young girl.<br>
+                    Her distrust appears confirmed when Marilla cannot locate a brooch, thus leading her to believe that Anne is a thief.<br>
+                    The Cuthberts send her away, thus "returning" her to the orphanage. While she does arrive back at the orphanage, she is terrified to enter, haunted by the bullying she had endured there, and returns to the train station.<br>
+                    Meanwhile, Marilla discovers that the brooch had been misplaced rather than stolen and that discovery leads her to understand that Anne is not a thief.<br>
+                    Matthew consequently finds Anne and convinces her to return to Green Gables, where she is officially made part of their family. However, Anne continues to face bullying from students in the Avonlea school and class-based discrimination from Diana's parents and others in the community.<br>
+                    Anne once again returns and attempts to gain acceptance by the rest of Avonlea, using her survival mechanisms of intelligence, problem-solving abilities, and imagination.....
+    
+                    <a href="#" class="read-more-btn">read more</a>
+                    <h1 class="quote1">“It's not what the world holds for you,<br> it's what you bring to it.”</h1>
+                </div>
+        </div> 
+        
+        <!-- ====== about us ====== -->          
+        <div class="about-us-section">
+            <div class="cast-img">
+                <img src="cast.jpg" width="600">
+            </div>
+            <div id="about-us">
+                <div class="about-us-box">
+                    <h2>about us</h2>
+                </div>
+                <div class="about-us-text">
+                    <h3 class="cast">CAST</h3>
+                    <ul>
+                        <li class="cast-name">Amybeth McNulty as Anne Shirley</li>
+                        <li class="cast-name">Geraldine James as Marilla Cuthbert</li>
+                        <li class="cast-name">Dalila Bela as Diana Barry</li>
+                        <li class="cast-name">Lucas Jade Zumann as Gilbert Blythe</li>
+                        <li class="cast-name">Aymeric Jett Montaz as Jerry Baynard</li>
+                        <li class="cast-name">R. H. Thomson as Matthew Cuthbert</li>
+                        <li class="cast-name">Corrine Koslo as Rachel Lynde</li>
+                        <li class="cast-name">Dalmar Abuzeid as Sebastian "Bash" Lacroix </li>
+                        <li class="cast-name">Cory Grüter-Andrew as Cole Mackenzie</li>
+                    </ul>
+                </div>
+            </div>
+        </div> 
+        <!-- ====== Cast & Crew ====== -->  
+        <div class="cast-and-crew-section">
+            <div class="cast-and-crew-bg-color">
+                <div id="cast-and-crew">
+                    <div class="cast-and-crew-box"><h2>Cast & crew</h2></div>
+                    
+                    <div class="cast-grid">
+                        <div class="img-row1">
+                            <center>
+                                <img class="cast-grid-img-row1" src="anne---.jpeg" width="180" height="230"> 
+                                <img class="cast-grid-img-row1"src="lucasss.jpeg" width="160" height="230">
+                                <img class="cast-grid-img-row1"src="geraldine.jpeg" width="160" height="230">
+                                <img class="cast-grid-img-row1"src="RH.jpeg" width="190" height="230">
+                                <img class="cast-grid-img-row1"src="dalila.jpeg" width="190" height="230">
+                            </center>
+                        </div>
+                        
+                        <div class="img-row2">
+                            <center>
+                                    <img class="cast-grid-img-row1"src="kyla.jpeg" width="160" height="230">
+                                    <img class="cast-grid-img-row1"src="corrine.jpeg" width="190" height="230">
+                                    <img class="cast-grid-img-row1"src="dalmar.jpeg" width="160" height="230">
+                                    <img class="cast-grid-img-row1"src="miranda.jpeg" width="180" height="230">
+                                    <img class="cast-grid-img-row1"src="glenna.jpg" width="190" height="230">
+                            </center>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ====== Beyond Cast & Crew ====== -->  
+        <div class="beyond-cast-section">
+            <div class="release-section">
+                <h3>REALEASE</h3>
+                <p class="release-text">In August 2018, CBC and Netflix renewed the series for a 10-episode third season, which premiered on September 22, 2019, on CBC and was released on Netflix on January 3, 2020.</p>
+                <a class="main-web-btn" href="#">See more</a>
+            </div>
+        </div>
+        <!-- ====== Sign Up ====== --> 
+        <div id="signup">
+            <center>
+                <h1>ANNE WITH AN E </h1>
+                <p>for more information about any other series or movie visit Movify the site that brings you all information about anything you need </p>
+                <p>to get notified with any updates </p>
+                <h3>Sign up here</h3>
+            </center>
+                <form id="survey-form">
+                    
+                    <label for="name" id="name-label">Name:
+                        <input type="text" id="name" name="name" required placeholder="Enter your name" style="width: 50%;">
+                    </label><label class="in" for="number" id="number-label">Age <span>(optional)</span>
+                        <input type="number" id="number" name="age" min="13" max="120"placeholder="Age">
+                    <label for="email" id="email-label">Email:
+                        <input type="email" id="email" name="email" required placeholder="Enter your email">
+                    </label>
+                    
+                    </label>
+                    <br>
+               
+                    <label for="bio">provide your review on this website
+                        <textarea id="bio" name="bio" rows="5" cols="20" placeholder="I like coding on the beach..."></textarea>
+                    <button type="submit">Sign Up</button>
+                </form>
+            
+            
+        </div>
+   
+    </body>
+</html>

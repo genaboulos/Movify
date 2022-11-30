@@ -1,0 +1,310 @@
+body{
+    background-image:linear-gradient(95deg, rgba(245, 246, 246, 0.701),rgba(155, 77, 9, 0.671)) ,url(bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    font-size: large;
+}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+#navbar {
+    overflow: hidden;
+    background-color: rgba(51, 51, 51, 0.302);
+  }
+  
+  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+/* nav bar kolo */
+.logo-and-menu{   
+    background-color:rgba(84, 85, 64, 0.886);
+    display:flex;
+    width:auto;
+    overflow:auto;
+    height: auto;
+    margin: auto;
+    padding:1.3%;
+}
+
+.main-menu{    /*el div nfso */
+    padding-top: 0.8%;
+    margin: auto;
+    float:right;
+    width: auto;
+    font-size:20px;
+}
+.main-menu a{    /* links el main items eli f el el div */
+    color:rgb(255, 235, 197);
+    text-decoration: none;
+    margin:20px;
+}
+.main-menu a:hover{    /* lma 22of 3la eli linkat de*/
+    color:rgb(182, 180, 178);
+    transition: .4s;
+}
+.slideshow-container {
+    position: relative;
+    margin: auto;
+  }
+  * {box-sizing: border-box;}
+.text{
+    position: absolute;
+    width: 100%;
+    top: 70%;
+    left: 4%;
+    color:rgb(249, 228, 202);
+    transition: .7s;
+    animation-name: text;
+    animation-duration: 1.8s;
+    line-height: 30px;
+
+}
+.bg2-text{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 100%;
+    color:rgb(125, 111, 93);
+    transition: .7s;
+    font-size: larger;
+    animation-name: text;
+    animation-duration: 1.8s;
+
+}
+.bg2-text p{
+    color:rgb(195, 190, 183);
+    font-size: 30px;
+}
+.text h1{
+    font-size: 65px;
+}
+.text p{
+    font-size: 25px;
+    font-family:fantasy;
+    letter-spacing: 2px;
+}
+@keyframes text{
+  2% {left:150px;}
+}
+
+.active {
+    background-color: #717171;
+  }
+  
+.fade {
+    animation-name: fade;
+    animation-duration: 1s;
+  }
+  @keyframes fade {
+    from {opacity: .8} 
+    to {opacity: 1}
+  }
+  .story-section{
+    padding: 10px;
+    background-color: #b4ac9ec1;
+
+    
+ }
+  #story{
+    padding-top: 20px ;
+    padding-left: 15px;
+
+  }
+ 
+  .story-box {
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    display: inline-block;
+    background-color:rgba(83, 106, 96, 0.421);
+    padding: 20px 40px;
+
+}
+.story-box h2{
+    border: 6px solid #ffffffa0;
+    padding: 20px 140px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.story-text{
+    padding: 30px;
+    color:rgb(52, 73, 64)
+}
+.story-text .realeased-date{
+    color:rgb(152, 107, 43);
+}
+.read-more-btn{
+    text-decoration:underline;
+    color:#5a4d1d;
+  
+}
+.read-more-btn:hover{
+    color:rgb(163, 160, 18);
+}
+.quote1{
+    margin-top: 60px;
+    text-align:left;
+    text-transform:uppercase;
+    font-family: Arial, sans-serif;
+    font-weight:100;
+    word-spacing: 5px;
+}
+.about-us-section , .cast-and-crew-section , .beyond-cast-section
+{
+    display: flex;
+    padding-top:  100px;
+    padding-bottom: 30px;
+    background: url(bg8.jpeg);
+}
+.beyond-cast-section{
+    padding-top:  10px;
+}
+.second-image{
+    margin-top:5px;
+}
+#about-us{
+    margin-left: 100px;
+}
+
+.about-us-box {
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    background-color:#b4ac9ec1;
+    padding: 10px 30px;
+}
+.about-us-box h2{
+    border: 6px solid #ffffffa0;
+    padding: 20px 110px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.cast{
+    color:rgba(60, 65, 63, 0.803);
+    text-transform: uppercase;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-seri;
+}
+.cast-name{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.cast-and-crew-bg-color{
+    background-color:#2c3330e2;
+    width: 100%;
+    margin-right: 10px;
+}
+
+#cast-and-crew{
+    padding-top: 20px ;
+    padding-left: 15px;
+
+  }
+ 
+  .cast-and-crew-box {
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    display: inline-block;
+    background-color:rgb(114, 119, 117);
+    padding: 10px 30px;
+    box-sizing:border-box;
+
+}
+.cast-and-crew-box h2{
+    border: 6px solid #ffffffa0;
+    padding: 20px 100px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.slide-show-text{
+margin-top: 80px;
+color:#fff;
+margin-bottom: 50px;
+}
+.release-section{
+    margin-left: 70px;
+    font-family: 'Oswald', sans-serif;
+    color:#2c3330e2;
+}
+.release-text{
+    font-size: 12px;
+    color:#717171dd;
+    margin-bottom: 50px;
+}
+.main-web-btn{
+    border: 2px solid rgb(110, 118, 115);
+    padding:10px 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color:rgb(110, 118, 115);
+}
+.main-web-btn:hover{
+    background-color: rgb(110, 118, 115);
+    color:#fff;
+    transition: .7s ease;
+}
+
+.img-row1{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.img-row2{
+    margin-bottom: 2%;
+}
+
+
+form {
+    background-color: #bcab97c1;
+    width: 60vw;
+    width: 45%;
+    min-width: 550px;
+    margin: 0 auto;
+    padding: 2em;
+    border-radius: 15px;
+}
+input{
+    margin: 10px 0 0 0;
+    min-height: 30px;
+    border-radius: 10px;
+    border-color: rgb(132, 129, 108);
+    border-width: 1px;
+    padding: 8px;
+}
+#email-label{
+    display: block;
+}
+#email{
+    width:86%;
+}
+textarea {
+    display: block;
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 30px;
+    border-radius: 10px;
+    border-color: rgb(126, 124, 107);
+    border-width: 3px;
+    padding: 10px;
+}
+button{
+    width: 20%;
+    height: 3em;
+    margin-top: 20px;
+    display: block;
+    color:#ede7de;
+    background-color:#5e390889;
+    border-radius:10px;
+    border-color:#726c4c;
+    border-width:1px;
+    font-size: medium;
+}
+button:hover{
+    background-color:#d3c7b5;
+    color:#5a4d1d
+}
+
+
+
+
+
